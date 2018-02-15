@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    
+        <body>
+        Enter a value A<input type="text" id="no1"><br/>
+        Enter a value B <input type="text" id="no2"><br/> 
+         <br/><br/>
+            <button onclick="swap()">ADD</button><br/><br/><br/>
+            value A1<input type="text" id="first"><br/>
+          value b1<input type="text" id="sec"><br/>
+        </body>
+    
+    
+    <script>
+        function swap(){
+            var a, b, c;
+            a=Number(document.getElementById("no1").value);
+            b=Number(document.getElementById("no2").value);
+            c=a;
+            a=b;
+            b=c;
+            document.getElementById("first").value=a;
+            document.getElementById("sec").value=b;
+            
+            
+        }
+    </script>
+</html>
